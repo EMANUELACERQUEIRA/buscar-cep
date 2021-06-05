@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar CEP</title>
+    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery.mask.min.js"></script>
+</head>
+
+<body>
+    <form id="formEndereco" action="#">
+        <p>
+            <label for="inputCEP">CEP:</label>
+            <input type="text" id="inputCEP" name="inputCEP" required/>
+            <input type="button" id="btnBuscarCEP" name="btnBuscarCEP" value="Buscar..."/>
+        </p>
+        <p>
+            <label for="inputEndereco">Endereço:</label>
+            <input type="text" id="inputEndereco" name="inputEndereco" value="" disabled/>
+        </p>
+        <p>
+            <label for="inputNumero">Número: </label>
+            <input type="text" id="inputNumero" name="inputNumero" value="" />
+        </p>
+        <p>
+            <label for="inputComplemento">Complemento: </label>
+            <input type="text" id="inputComplemento" name="inputComplemento" value="" />
+        </p>
+        <p>
+            <label for="inputBairro">Bairro: </label>
+            <input type="text" id="inputBairro" name="inputBairo" value="" disabled/>
+        </p>
+        <p>
+            <label for="inputCidade">Cidade: </label>
+            <input type="text" id="inputCidade" name="inputCidade" value="" disabled/>
+        </p>
+        <p>
+            <label for="selectEstado">Estado: </label>
+            <select id="selectEstado" name="selectEstado" value="" disabled>
+                <option value=""></option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Destrito Federal</option>
+                <option value="ES">Espírito SAnto</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </p>
+        <input type="submit" id="btnGravar" value="Gravar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
